@@ -17,7 +17,7 @@ Area = {
 Area_elements = {
     "Eldorhaven" : ["Your House", "Someone's House", "Lyra's Enchantment Store", "Guildcenter", "Eldorius's Statue"],
     "Mysthaven" : ["Guildcenter", "Someone's House", "Someone's House", "A Pond"],
-    "Celetria" : ["Celestria's Circus", "Celestria's Mart","Someone's House", "Someone's House", "Backyard"],
+    "Celestria" : ["Celestria's Circus", "Celestria's Mart","Someone's House", "Someone's House", "Backyard"],
     "Emberfall" : ["Guildcenter", "Someone's House", "Rebellions's Residence", "The Red Waterfall"],
     "City of Jewels" : ["Guildcenter", "Jewellery shop", "Shadow Hideout", "Eldoria's Musuem"],
     "Beach Side" : ["Brook's House"], 

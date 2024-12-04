@@ -7,7 +7,7 @@ class options():
             print(f"\nYour Profile:\nName: {profile.name}\nGender: {profile.gender}\nAge: {profile.age}")
             input("Press Enter to go back to the options menu: ")
             break
-        
+
 
     def items(self):
         while True:
@@ -63,7 +63,7 @@ class game():
                     print("Aldorin: City lf Jewels is taken over by shadow cult and you aren't strong enough to defeat shadowcult members. You should not go there now.")
                 elif Area[location][choice][1] == "Mysthaven" and "Fog Clearer" not in inventory:
                     print("Oh no the fog. I can't see anything.\nHow did I reached here")
-                    locaion = "Celestria"
+                    location = "Celestria"
                 else:
                     location = Area[location][choice][1]
             else:
@@ -168,7 +168,7 @@ class scan():
         elif location_element == "A Strange Sign":
             print(f"I am waiting to meet you {profile.name} - Malik")
         elif location_element == "Eldoria's Palace":
-            story.palace
+            story.palace()
         elif location_element == "Wishing Well":
             print("You: I wish that Lyra's soul can rest in heaven and soon see the light that will soon rise on the land of Eldoria")
         elif location_element == "Shipping Area":
@@ -204,7 +204,7 @@ class story():
                 time.sleep(2)
                 print("You kill all of the shadow cult members present with one blow.")
                 time.sleep(2)
-                pint("A strange voice appeared")
+                print("A strange voice appeared")
                 time.sleep(2)
                 print(f"Malik: Congratulations, {profile.name}. You were able to kill all of my people with a single blow. Here take this as a reward {profile.name}.")
                 time.sleep(2)
@@ -225,10 +225,10 @@ class story():
                 temp = int(input("1. City of Death\n2. Solstice City"))
                 if temp == 1:
                     location = "City of Death"
-                    print(f"You have reached your destination{location}")
+                    print(f"You have reached your destination {location}")
                 elif temp == 2:
-                    location == "Solstice City"
-                    print(f"You have reached your destination{location}")
+                    location = "Solstice City"
+                    print(f"You have reached your destination {location}")
                 else:
                     print("Please Enter the correct command")
             if location == "Solstice City":
@@ -236,7 +236,7 @@ class story():
                 temp = int(input("1. Stonegate"))
                 if temp == 1:
                     location = "Stonegate"
-                    print(f"You have reached your destination{location}")
+                    print(f"You have reached your destination {location}")
                 else:
                     print("Please Enter the correct command")
             if location == "City of Death":
@@ -244,9 +244,10 @@ class story():
                 temp = int(input("1. Stonegate"))
                 if temp == 1:
                     location = "Stonegate"
-                    print(f"You have reached your destination{location}")
+                    print(f"You have reached your destination {location}")
                 else:
                     print("Please Enter the correct command")
+
 
     def ruins(self):
         if 'Ruins' not in visited:
@@ -270,7 +271,7 @@ class story():
             time.sleep(2)
             print("You approach the unknown person.")
             time.sleep(2)
-            print(f"Lyra: {profile.name} stop. He is Malik.\nYou take your sword out and attack Malik.\Malik cuts the sword in half with his sword.\nMalik: I have been expecting you {profile.naem}. I thought you would be a good warmup for me but seeing your foolishness, I have started to doubt that you think that really was the holy sword. No it's just a replica of the sword the real sword is hidden inside the palace of eldoria. Maybe my expectations were for nothing I think I should kill you you now.\nMalik tries to slash you with the sword but it is block =ed by Lyra.\nYou: Wait Lyra, you are bleeding.\nLyra: It's no use now {profile.name}. Just live and return the crystal of Ethernity to it's original place.\nMalik: Looks like your friend saved your life so just live on for now, until we meet again {profile.name}\nMalik disappeared.")
+            print(f"Lyra: {profile.name} stop. He is Malik.\nYou take your sword out and attack Malik.\nMalik cuts the sword in half with his sword.\nMalik: I have been expecting you {profile.naem}. I thought you would be a good warmup for me but seeing your foolishness, I have started to doubt that you think that really was the holy sword. No it's just a replica of the sword the real sword is hidden inside the palace of eldoria. Maybe my expectations were for nothing I think I should kill you you now.\nMalik tries to slash you with the sword but it is block =ed by Lyra.\nYou: Wait Lyra, you are bleeding.\nLyra: It's no use now {profile.name}. Just live and return the crystal of Ethernity to it's original place.\nMalik: Looks like your friend saved your life so just live on for now, until we meet again {profile.name}\nMalik disappeared.")
             inventory.remove("Sword")
             dead.append("Lyra") 
         else:
@@ -285,7 +286,7 @@ class story():
         else: 
             print("Where are all the people of the palace.")
     def ship(self):
-        if "Invitation Letter" in inventory():
+        if "Invitation Letter" in inventory:
             print("Dev: Please wait until we finish the preparation of Shadowmere")                            
         else:
             print("You need a ticket to enter.")
