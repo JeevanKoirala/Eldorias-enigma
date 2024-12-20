@@ -46,7 +46,7 @@ Welcome to **Eldoria: The Enigma**, a text-based adventure game that takes you i
 
 ## How to Play
 
-1. **Start the Game**: Run `main.py` to begin your adventure.
+1. **Start the Game**: Run `main.py` to start your adventure.
 2. **Character Setup**: You will be prompted to enter your gender, name, and age. This information is stored in a file for future reference.
 3. **Follow the Story**: After setting up your profile, you will be guided through the story. Read the text carefully and respond to prompts as needed.
 4. **Progress**: Your decisions and responses will shape the course of the adventure.
